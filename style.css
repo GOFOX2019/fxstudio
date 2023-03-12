@@ -1,0 +1,124 @@
+
+body{
+	background-color: rgb(41, 41, 41);
+}
+*{
+	color:black;
+	animation-name: animate;
+	animation-duration: 1s;
+}
+.head{
+	height: 160px;
+	background-color: rgb(54, 54, 54);
+	display: flex;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+}
+
+.lnks{
+	background-position: center;
+	justify-content: space-around;
+	text-align: left;
+	position: relative;
+	left:129ex;
+
+		bottom:40px;
+}
+button{
+	background-color: darkorange;
+	animation-name: lol;
+	background-color: none;
+	border-style: none;
+	border-width: 2px;
+
+
+	padding: 10px ;
+	border-radius: 3px;
+}
+button:hover{
+	color: black;
+	filter: drop-shadow(0 0 20px #ffc403) ;
+	transform: scale(130%);
+	background-color:    #ff8000;
+
+}
+a{
+	color: black;
+	text-decoration: none;
+	padding: 10;
+}
+h1{
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 35px;
+
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+	border-style: solid;
+	border-color: rgb(255, 123, 0);
+	border-radius: 6px;
+	
+}
+.bodyDiv{
+	text-align: center;
+	margin-top:170px ;
+}
+
+
+@keyframes animate {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	30% {
+		width: 50px;
+		height: 0px;
+	}
+	60% {
+		width: 50px;
+		height: 80px;
+	}
+}
+mark{
+	background-color: green;
+	color: wheat;
+}
+@keyframes imge{
+	10%{transform: scale(1.5)}
+	50%{transform: scale(1.4)}
+	70%{transform: scale(1.3)}
+
+	80%{transform: scale(1.2)}
+	90%{transform: scale(1.1)}
+
+
+}
+
+
+
+.down{
+	animation-name: imge;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;	
+}
+
+.down:hover{
+	background-color: orangered;
+}
+details > summary{
+	list-style-type: none;
+}
+details > summary::before {
+    content: '▶️';
+}
+
+details[open] > summary::before {
+    content: '🔽';
+}
+link{
+	background-size: contain;
+}
