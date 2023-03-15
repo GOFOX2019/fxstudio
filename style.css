@@ -1,6 +1,6 @@
 
 body{
-	background-color: rgb(41, 41, 41);
+	background-color: rgb(36, 36, 36);
 }
 *{
 	color:black;
@@ -9,7 +9,7 @@ body{
 }
 .head{
 	height: 160px;
-	background-color: rgb(54, 54, 54);
+	background-color: rgb(0, 0, 0);
 	display: flex;
 	position: fixed;
 	top:0;
@@ -22,33 +22,39 @@ body{
 	justify-content: space-around;
 	text-align: left;
 	position: relative;
-	left:129ex;
+	left:120ex;
 
 		bottom:40px;
 }
 button{
-	background-color: darkorange;
+	background-color: rgb(0, 0, 0);
 	animation-name: lol;
 	background-color: none;
-	border-style: none;
+	border-style: solid;
 	border-width: 2px;
-
-
+	border-radius: 4px;
+	border-color: rgb(255, 255, 255);
 	padding: 10px ;
 	border-radius: 3px;
 }
 button:hover{
-	color: black;
-	filter: drop-shadow(0 0 20px #ffc403) ;
+	
 	transform: scale(130%);
-	background-color:    #ff8000;
+	background-color:    #ffffff;
 
 }
+button:hover > a{
+	color:black;
+	
+}
 a{
-	color: black;
+	padding: 15px;
+
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	padding: 10;
 }
+
 h1{
 	padding-left: 15px;
 	padding-top: 15px;
@@ -102,6 +108,7 @@ mark{
 .down{
 	animation-name: imge;
 	animation-duration: 1s;
+	border-style:  none;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;	
 }
